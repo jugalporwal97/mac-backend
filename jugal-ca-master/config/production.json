@@ -1,0 +1,5 @@
+{
+  "host": "18.216.109.16",
+  "port": 3232,
+  "postgres": "postgres://jugal:jugal@123@localhost:5432/jugal_ca"
+}

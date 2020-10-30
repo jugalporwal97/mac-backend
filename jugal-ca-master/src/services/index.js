@@ -1,0 +1,35 @@
+const users = require('./users/users.service.js');
+const products = require('./products/products.service.js');
+const banks = require('./banks/banks.service.js');
+const branches = require('./branches/branches.service.js');
+const productData = require('./product-data/product-data.service.js');
+const unitTypes = require('./unit-types/unit-types.service.js');
+const inspectors = require('./inspectors/inspectors.service.js');
+const contactPersons = require('./contact-persons/contact-persons.service.js');
+const cities = require('./cities/cities.service.js');
+const marketingPersons = require('./marketing-persons/marketing-persons.service.js');
+const statuses = require('./statuses/statuses.service.js');
+const categories = require('./categories/categories.service.js');
+const schemes = require('./schemes/schemes.service.js');
+const processDoneBy = require('./process-done-by/process-done-by.service.js');
+const accessManager = require('./access-manager/access-manager.service.js');
+const loginHistory = require('./login-history/login-history.service.js');
+// eslint-disable-next-line no-unused-vars
+module.exports = function (app) {
+  app.configure(users);
+  app.configure(products);
+  app.configure(banks);
+  app.configure(branches);
+  app.configure(productData);
+  app.configure(unitTypes);
+  app.configure(inspectors);
+  app.configure(contactPersons);
+  app.configure(cities);
+  app.configure(marketingPersons);
+  app.configure(statuses);
+  app.configure(categories);
+  app.configure(schemes);
+  app.configure(processDoneBy);
+  app.configure(accessManager);
+  app.configure(loginHistory);
+};
